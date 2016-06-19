@@ -9,7 +9,7 @@
   "scripts": {
     "lint": "eslint lib/ tests/",
     "test": "npm run lint && npm run unit-test",
-    "unit-test": "mocha tests/**/*.js",
+    "unit-test": "mocha tests/**/*.js --timeout 15000",
     "unit-test:watch": "npm run unit-test -- --watch"
   },
   "author": "Jacob Rask <jacob@jacobrask.net>",
